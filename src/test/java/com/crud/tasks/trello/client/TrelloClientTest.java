@@ -55,13 +55,13 @@ class TrelloClientTest {
         assertEquals(new ArrayList<>(), fetchedTrelloBoards.get(0).getLists());
 
     }
-   /* @Test
+    @Test
     public void shouldCreateCard() throws URISyntaxException {
         // Given
         when(trelloConfig.getTrelloApiEndpoint()).thenReturn("http://test.com");
         when(trelloConfig.getTrelloAppKey()).thenReturn("test");
         when(trelloConfig.getTrelloToken()).thenReturn("test");
-        when(trelloConfig.getTrelloUser()).thenReturn("test");
+        //when(trelloConfig.getTrelloUser()).thenReturn("test");
         TrelloCardDto trelloCardDto = new TrelloCardDto(
                 "Test task",
                 "Test Description",
@@ -83,9 +83,6 @@ class TrelloClientTest {
         // Then
         assertEquals("1", newCard.getId());
         assertEquals("test task", newCard.getName());
-       // assertEquals("http://test.com", newCard.getShortUrl());
+        assertEquals("http://test.com", newCard.getShortUrl());
     }
-
-    */
-
 }
