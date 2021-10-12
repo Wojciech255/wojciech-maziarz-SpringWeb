@@ -85,4 +85,9 @@ class TrelloClientTest {
         assertEquals("test task", newCard.getName());
         assertEquals("http://test.com", newCard.getShortUrl());
     }
+    @Test
+    public void shouldReturnEmptyList() throws URISyntaxException {
+
+    }
+
 }
