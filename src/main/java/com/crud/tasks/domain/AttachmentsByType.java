@@ -1,12 +1,15 @@
-/*package com.crud.tasks.domain;
+package com.crud.tasks.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AttachmentsByType {
 
-    Trello trello;
+    @JsonProperty("trello")
+    private Trello trello;
 }
-
- */
